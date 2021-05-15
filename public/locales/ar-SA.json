@@ -1,0 +1,392 @@
+{
+  "Farm": "المزرعة",
+  "Staking": "ربط الحصة",
+  "Syrup Pool": "تجمُّع Syrup",
+  "Exchange": "تبادل العملات",
+  "Docs": "الوثائق",
+  "Voting": "التصويت",
+  "Lottery": "اليانصيب",
+  "Unlock Wallet": "فتح المحفظة",
+  "Your %asset% Balance": "رصيدك من %asset%",
+  "Total %asset% Supply": "إجمالي المعروض من %asset%",
+  "LOCKED": "مقفل",
+  "Pending harvest": "بانتظار الحصاد",
+  "New rewards per block": "المكافآت الجديدة لكل كتلة",
+  "Total BECO burned since launch": "إجمالي BECO المحترقة منذ الإطلاق",
+  "See the Kitchen": "رؤية المطبخ",
+  "Telegram": "Telegram",
+  "Blog": "المدونة",
+  "Github": "Github",
+  "Twitter": "Twitter",
+  "Deposit": "إيداع",
+  "Earn": "المكسب",
+  "Stake FLIP tokens to stack BECO": "رهن رموز LP المميزة لتكديس BECO",
+  "You can swap back anytime": "يمكنك عكس المبادلة في أي وقت",
+  "%asset% Earned": "المكتسب من %asset%",
+  "Tokens Staked": "الرموز المميزة المرهونة",
+  "Every time you stake and unstake BECO tokens, the contract will automagically harvest BECO rewards for you!": "في كل مرة ترهن فيها رموز Beco المميزة أو تفك رهنها، سيحصد عقدك مكافآت BECO تلقائيًا من أجلك!",
+  "XVS Tokens Earned": "رموز XVS المميزة المكتسبة",
+  "Rewards will be calculated per block and total rewards will be distributed automatically at the end of each project’s farming period.": "سيتم احتساب المكافآت لكل كتلة، وسيتم توزيع إجمالي المكافآت تلقائيًا في نهاية فترة الزراعة لكل مشروع.",
+  "Pool": "التجمُّع",
+  "Coming soon": "قريبًا",
+  "APY": "النسبة المئوية للعائد السنوي",
+  "Total Liquidity": "إجمالي السيولة",
+  "View on BscScan": "العرض على BscScan",
+  "Beco price": "سعر Beco",
+  "%asset% Tokens Earned": "رموز %asset% المكتسبة",
+  "%num% blocks until farming ends": "%num% من الكتل حتى انتهاء الزراعة",
+  "Coming soon...": "قريبًا...",
+  "Your Stake": "رهنك",
+  "Farming starts in %num% Blocks": "ستبدأ الزراعة بعد %num% من الكتل",
+  "Finished": "انتهى",
+  "Farming ends in %num% Blocks": "ستنتهي الزراعة بعد %num% من الكتل",
+  "Project Site": "موقع المشروع",
+  "You can unstake at any time.": "يمكنك فك الرهن في أي وقت.",
+  "Rewards are calculated per block.": "يتم احتساب المكافآت لكل كتلة.",
+  "Total": "الإجمالي",
+  "End": "إنهاء",
+  "View project site": "عرض موقع المشروع",
+  "Your Project? 👀": "مشروعك؟ 👀",
+  "Create a pool for your token": "إنشاء تجمُّع لرمزك المميز",
+  "Apply now": "التقديم الآن",
+  "Round 1: BUYING": "الجولة الأولى: الشراء",
+  "%num% BECO": "%num% من BECO",
+  "Spend BECO to buy tickets, contributing to the lottery pot. Ticket purchases end approx. 30 minutes before lottery. Win prizes if 2, 3, or 4 of your ticket numbers match the winning numbers and their positions! Good luck!": "أنفق BECO لشراء التذاكر والمساهمة في جائزة اليانصيب. تنتهي مهلة شراء التذاكر قبل 30 دقيقة تقريبًا من سحب اليانصيب. اربح الجوائز إذا تطابقت 2 أو 3 أو 4 من أرقام تذاكرك مع الأرقام الفائزة وترتيبها! حظًا سعيدًا!",
+  "Your total tickets for this round": "إجمالي تذاكرك لهذه الجولة",
+  "Buy ticket": "شراء تذكرة",
+  "View your tickets": "عرض تذاكرك",
+  "Approx. time left to buy tickets": "الوقت المتبقي تقريبًا لشراء التذاكر",
+  "My Tickets (Total: %TICKETS%)": "تذاكري (الإجمالي: %TICKETS%)",
+  "Close": "إغلاق",
+  "Latest Winning Numbers": "آخر الأرقام الفائزة",
+  "Tickets matching 4 numbers:": "التذاكر التي طابقت 4 أرقام:",
+  "Tickets matching 3 numbers:": "التذاكر التي طابقت 3 أرقام:",
+  "Tickets matching 2 numbers:": "التذاكر التي طابقت رقمين:",
+  "Export recent winning numbers": "تصدير الأرقام الفائزة مؤخرًا",
+  "Enter amount of tickets to buy": "إدخال كمية التذاكر التي تريد شراءها",
+  "Max": "الحد الأقصى",
+  "%num% BECO Available": "%num% BECO متوفرة",
+  "Your amount must be a multiple of 10 BECO": "لا بد أن تكون الكمية من مضاعفات 10 BECO",
+  "1 Ticket = 10 BECO": "التذكرة الواحدة = 10 BECO",
+  "You will spend: %num% BECO": "ستنفق: %num% BECO",
+  "Cancel": "إلغاء",
+  "Confirm": "تأكيد",
+  "Warning": "تحذير",
+  "Lottery ticket purchases are final.": "تكون مشتريات تذاكر اليانصيب نهائية (لا رجعة فيها).",
+  "Your BECO will not be returned to you after you spend it to buy tickets.": "لن تستعيد BECO بعد إنفاقها في شراء التذاكر.",
+  "Tickets are only valid for one lottery draw, and will be burned after the draw.": "تكون التذاكر صالحة لعملية سحب يانصيب واحدة، وستحترق بعد السحب.",
+  "Buying tickets does not guarantee you will win anything. Please only participate once you understand the risks.": "شراء التذاكر لا يضمن لك أن تربح أي شيء. يُرجى عدم المشاركة إلا بعد تفهُّم المخاطر.",
+  "I understand": "أتفهم ذلك",
+  "Ticket purchases are final. Your BECO cannot be returned to you after buying tickets.": "تكون مشتريات التذاكر نهائية (لا رجعة فيها). لا يمكن إعادة BECO إليك بعد شراء التذاكر.",
+  "Claim prizes": "المطالبة بالجوائز",
+  "CAKE prizes to be claimed": "جوائز BECO للمطالبة بها",
+  "Round 2: CLAIMING": "الجولة الثانية: المطالبة",
+  "Pending Confirmation": "بانتظار التأكيد",
+  "Approx. time before next lottery start": "الوقت المتبقي تقريبًا قبل سحب اليانصيب التالي",
+  "Approve BECO": "الموافقة على BECO",
+  "IFO: Intitial Farm Offerings": "IFO: العرض الأولي للمزرعة",
+  "Buy new tokens with a brand new token sale model.": "يمكنك شراء رموز مميزة جديدة من خلال نموذج جديد تمامًا لبيع الرموز المميزة.",
+  "You’ll pay for the new tokens using BECO-BNB LP tokens, which means you need to stake equal amounts of BECO and BNB in a liquidity pool to take part.": "ستدفع ثمن الرموز المميزة الجديدة باستخدام رموز BECO-BNB LP المميزة، ما يعني أنك بحاجة إلى رهن كميات متساوية من BECO وBNB في تجمُّعٍ للسيولة من أجل المشاركة.",
+  "Get BECO-BNB LP >": "الحصول على BECO-BNB LP >",
+  "The project gets the BNB, BecoSwap burns the BECO.": "يحصل المشروع على BNB ويقوم BecoSwap بحرق BECO.",
+  "You get the tokens.": "وتحصل أنت على الرموز المميزة.",
+  "Want to launch your own IFO?": "هل تريد إطلاق IFO الخاص بك؟",
+  "Launch your project with BecoSwap, Binance Smart Chain’s most-used AMM project and liquidity provider, to bring your token directly to the most active and rapidly growing community on BSC.": "أطلق مشروعك مع BecoSwap وهو مشروع AMM (صانع سوق آلي) وموفِّر السيولة الأكثر استخدامًا على Binance Smart Chain، لإحضار رمزك المميز مباشرةً إلى أكثر المجتمعات نشاطًا وسرعةً في النمو على BSC.",
+  "Apply to launch": "التقديم للإطلاق",
+  "Community": "المجتمع",
+  "Core": "الفريق الأساسي",
+  "Available": "الرصيد المتاح",
+  "My Wallet": "محفظتي",
+  "Sign out": "تسجيل الخروج",
+  "Harvest all (%count%)": "حصاد الكل (%count%)",
+  "Beco Stats": "إحصائيات Beco",
+  "Total BECO Supply": "إجمالي المعروض من BECO",
+  "Total BECO Burned": "إجمالي المحترق من BECO",
+  "New BECO/block": "CAKE/كتلة جديدة",
+  "Farms & Staking": "المزارع والرهن",
+  "BECO to Harvest": "CAKE للحصاد",
+  "BECO in Wallet": "CAKE في المحفظة",
+  "Collecting BECO": "تحصيل BECO",
+  "Your Lottery Winnings": "أرباحك من اليانصيب",
+  "BECO to Collect": "CAKE للتحصيل",
+  "Total jackpot this round": "إجمالي الجائزة الكبرى في هذه الجولة",
+  "Collect Winnings": "تحصيل الأرباح",
+  "Buy Tickets": "شراء التذاكر",
+  "Harvest": "الحصاد",
+  "Approve": "الاعتماد",
+  "Select": "الاختيار",
+  "Winning Numbers This Round": "الأرقام الفائزة في هذه الجولة",
+  "Staking Pool": "تجمُّع الرهن",
+  "BecoSwap": "BecoSwap",
+  "The #1 AMM and yield farm on Binance Smart Chain.": "AMM (صانع السوق الآلي) ومزرعة العائد رقم 1 على Binance Smart Chain.",
+  "Stake BECO to earn new tokens.": "ارهن BECO لكسب رموز مميزة جديدة.",
+  "Launch Time": "وقت الإطلاق",
+  "For Sale": "للبيع",
+  "CAKE to burn (USD)": "CAKE التي ستحترق (USD)",
+  "Unstake": "فك الرهن",
+  "⭐️ Every time you stake and unstake LP tokens, the contract will automagically harvest BECO rewards for you!": "⭐️ في كل مرة ترهن فيها رموز LP المميزة أو تفك رهنها، سيحصد عقدك مكافآت BECO تلقائيًا من أجلك!",
+  "How to take part": "كيفية المشاركة",
+  "Before Sale": "قبل البيع",
+  "Buy BECO and BNB tokens": "قم بشراء رموز BECO وBNB المميزة.",
+  "Get BECO-BNB LP tokens by adding BECO and BNB liquidity": "احصل على رموز BECO-BNB LP المميزة عن طريق إضافة سيولة من BECO وBNB.",
+  "During Sale": "خلال البيع",
+  "While the sale is live, commit your BECO-LP tokens to buy the IFO tokens": "بينما يكون البيع جاريًا، استخدام رموز BECO-LP المميزة لشراء رموز IFO (العرض الأولي للمزرعة) المميزة.",
+  "After Sale": "بعد البيع",
+  "Claim the tokens you bought, along with any unspent funds.": "طالب بالرموز المميزة التي اشتريتها وأي أموال لم تنفقها.",
+  "Done!": "تم!",
+  "Read more": "قراءة المزيد",
+  "Connect": "ربط",
+  "Trade in for BECO, or keep for your collection!": "استبدلها مقابل BECO، أو احتفظ بها في مجموعتك!",
+  "Register your interest in winning an NFT below.": "سجِّل اهتمامك بربح NFT أدناه.",
+  "Register for a chance to win": "سجِّل لتحظى بفرصة الربح",
+  "Learn more": "معرفة المزيد",
+  "Trade in NFT": "استبدل NFT",
+  "Trade in": "استبدال",
+  "You will receive": "ستحصل على",
+  "When you trade in this NFT to receive BECO, you will lose access to it forever!": "عندما تستبدل NFT للحصول على BECO، ستفقد إمكانية الوصول إلى NFT للأبد!",
+  "Claim NFT": "المطالبة بـ NFT",
+  "How it works": "طريقة العمل",
+  "Winners will be able to claim an NFT on this page once the claiming period starts.": "سيتمكن الفائزون من المطالبة بـ NFT على هذه الصفحة بعد بدء فترة المطالبة.",
+  "If you’re not selected, you won’t be able to claim. Better luck next time!": "إذا لم يتم اختيارك، فلن تتمكن من المطالبة. حظًا وفيرًا في المرة القادمة!",
+  "Winners can trade in their NFTs for a BECO value until the expiry date written below. If you don't trade in your NFT by then, don’t worry: you’ll still keep it in your wallet!": "يمكن للفائزين استبدال رموز NFT مقابل قيمتها من BECO حتى تاريخ الانتهاء المذكور أدناه. إذا لم تستبدل NFT بحلول هذا التاريخ، فلا تقلق: ستظل تحتفظ بها في محفظتك!",
+  "How are winners selected?": "كيف يتم اختيار الفائزين؟",
+  "Winners are selected at random! Good luck!": "يتم اختيار الفائزين بشكلٍ عشوائي!",
+  "Value if traded in": "القيمة في حال الاستبدال",
+  "Number minted": "العدد المسكوك",
+  "Number burned": "العدد المحترق",
+  "Claim this NFT": "المطالبة بـ NFT هذا",
+  "Trade in for BECO": "الاستبدال مقابل BECO",
+  "Loading…": "جارٍ التحميل…",
+  "Details": "التفاصيل",
+  "You won!": "لقد ربحت!",
+  "Claim an NFT from the options below!": "طالب بـ NFT من الخيارات أدناه!",
+  "Can be traded until": "يمكن استبداله حتى",
+  "Wallet Disconnected": "انقطع ارتباط المحفظة",
+  "Connect to see if you have won an NFT!": "اربطها لتعرف ما إذا كنت قد ربحت NFT!",
+  "Home": "الصفحة الرئيسية",
+  "Trade": "التداول",
+  "Farms": "المزارع",
+  "Pools": "التجمُّعات",
+  "NFT": "NFT",
+  "Info": "المعلومات",
+  "IFO": "IFO (العرض الأولي للمزرعة)",
+  "More": "المزيد",
+  "Liquidity": "السيولة",
+  "Overview": "استعراض عام",
+  "Token": "الرمز المميز",
+  "Pairs": "الأزواج",
+  "Accounts": "الحسابات",
+  "Stake LP tokens to earn BECO": "رهن رموز LP المميزة لكسب BECO",
+  "Active": "نشطة",
+  "Inactive": "غير نشطة",
+  "Dual": "ثنائي",
+  "Compound": "مجمَّع",
+  "Unstake %asset%": "فك رهن %asset%",
+  "The BECO Lottery": "يانصيب BECO",
+  "Buy tickets with BECO": "شراء التذاكر باستخدام BECO",
+  "Win if 2, 3 or 4 of your ticket numbers match!": "اربح إذا طابقت أرقام 2 أو 3 أو 4 من تذاكرك الأرقام الفائزة!",
+  "%time% Until lottery": "%time% حتى سحب اليانصيب",
+  "Next draw": "السحب التالي",
+  "Past draws": "السحوبات السابقة",
+  "Round %num%": "الجولة %num%",
+  "Total Pot": "إجمالي الجائزة",
+  "Your tickets for this round": "تذاكرك في هذه الجولة",
+  "Sorry, no prizes to collect": "عذرًا، لا توجد جوائز لتحصيلها",
+  "In Wallet": "في المحفظة",
+  "Loading...": "جارٍ التحميل...",
+  "Next IFO": "IFO (العرض الأولي للمزرعة) التالي",
+  "Past IFOs": "عروض IFO (العرض الأولي للمزرعة) السابقة",
+  "APR": "APR (معدل الفائدة السنوية المئوية)",
+  "Select lottery number:": "اختيار رقم اليانصيب:",
+  "Search": "البحث",
+  "History": "السجل",
+  "Pool Size": "حجم التجمُّع",
+  "Burned": "المحترقة",
+  "Prize Pot": "الجائزة",
+  "Winners": "الفائزون",
+  "No. Matched": "الأرقام المطابقة",
+  "Approve Contract": "اعتماد العقد",
+  "%asset% staked": "%asset% المرهونة",
+  "Total Value Locked": "إجمالي القيمة المجمَّدة",
+  "Across all LPs and Syrup Pools": "عبر كل تجمُّعات LP وSyrup",
+  "Your wallet": "محفظتك",
+  "Logout": "تسجيل الخروج",
+  "Profile Setup": "إعداد الملف التعريفي",
+  "Show off your stats and collectibles with your unique profile.": "استعرض إحصائياتك والعناصر القابلة للتحصيل من خلال ملفك التعريفي المميز.",
+  "Total cost: 10 BECO": "إجمالي التكلفة: 5 BECO",
+  "Get Starter Collectible": "الحصول على العنصر الأولي القابل للتحصيل",
+  "Set Profile Picture": "تعيين صورة الملف التعريفي",
+  "Join Team": "الانضمام لفريق",
+  "Set Name": "تعيين الاسم",
+  "Step 1": "الخطوة الأولى",
+  "Every profile starts by making a \"starter\" collectible (NFT).": "يبدأ كل ملف تعريفي بإنشاء عنصر \"أولي\" قابل للتحصيل (NFT).",
+  "This starter will aslo become your first profile picture.": "سيصبح هذا العنصر الأولي أيضًا صورة ملفك التعريفي الأولى.",
+  "You can change your profile pic later if you get another approved Pancake Collectible,": "يمكنك تغيير صورة ملفك التعريفي لاحقًا إذا حصلت على عنصر Pancake قابل للتحصيل معتمد،",
+  "Choose your Starter!": "اختر عنصرك الأولي!",
+  "Choose wisely: you can only ever make one starter collectible!": "اختر بحكمة: لا يمكنك إنشاء أكثر من عنصر أولي قابل للتحصيل على الإطلاق!",
+  "Cost: 5 BECO": "التكلفة: 5 BECO",
+  "Next Step": "الخطوة التالية",
+  "Approving": "جارٍ الاعتماد",
+  "Confirming": "جارٍ التأكيد",
+  "Approved": "تم الاعتماد",
+  "Confirmed": "تم التأكيد",
+  "Insufficient BECO balance": "رصيد BECO غير كافٍ",
+  "Step 2": "الخطوة الثانية",
+  "Choose collectible": "اختيار العنصر القابل للتحصيل",
+  "Choose a profile picture from the eligible collectibles (NFT) in your wallet, shown below.": "اختر صورة ملف تعريفي من العناصر القابلة للتحصيل المؤهلة (NFT) في محفظتك، وترد أدناه.",
+  "Only approved Pancake Collectibles can be used.": "وحدها عناصر Pancake القابلة للتحصيل المعتمدة يمكن استخدامها.",
+  "Allow collectible to be locked": "السماح بتجميد العنصر القابل للتحصيل",
+  "The collectible you've chosen will be locked in a smart contract while it's being used as your profile picture. ": "سيتم تجميد العنصر القابل للتحصيل الذي اخترته في عقد ذكي أثناء استخدامه كصورة لملفك التعريفي. ",
+  "Don't worry - you'll be able to get it back at any time.": "لا تقلق، ستتمكن من استعادته في أي وقت.",
+  "Step 3": "الخطوة الثالثة",
+  "Join a Team": "الانضمام لفريق",
+  "It won't be possible to undo the choice you make for the foreseeable future!": "لن يكون من الممكن التراجع عن اختيارك في المستقبل القريب!",
+  "There's currently no big difference between teams, and no benefit of joining one team over another for now.": "لا يوجد حاليًا اختلاف كبير بين الفرق، ولا فائدة من الانضمام إلى فريق بدلًا من الأخر في الوقت الحالي.",
+  "So pick whichever you like!": "لذا، اختر ما تريد!",
+  "%count% Members": "%count% من الأعضاء",
+  "Step 4": "الخطوة الرابعة",
+  "This name will be shown in team leaderboards and search results as long as your profile is active.": "سيظهر هذا الاسم في لوحات صدارة الفرق ونتائج البحث ما دام ملفك التعريفي نشطًا.",
+  "Your name must be at least 3 and at most 15 standards letters and numbers long.": "يجب ألا يقل طول اسمك عن 3 أحرف وأرقام قياسية وألا يزيد عن 15 حرفًا ورقمًا قياسيًا.",
+  "Complete Profile": "إكمال الملف التعريفي",
+  "Maximum length: 15 characters": "أقصى طول: 15 حرفًا",
+  "Minimum length: 3 characters": "أقل طول: 3 أحرف",
+  "No spaces or special characters": "غير مسموح بالمسافات أو الأحرف الخاصة",
+  "Submitting NFT to contract and confirming User Name and Team": "إخضاع NFT للعقد وتأكيد اسم المستخدم والفريق",
+  "Oops!": "عذرًا!",
+  "We couldn't find any Pancake Collectibles in your wallet.": "لم نتمكن من العثور على أي عناصر Pancake قابلة للتحصيل في محفظتك.",
+  "You need a Pancke Collectible to finish setting up your profile. If you sold or transferred your starter collectible to another wallet, you'll need to get it back or acquire a new one somehow. You can't make a new starter with this wallet address.": "أنت بحاجة إلى عنصر Pancake القابل للتحصيل للانتهاء من إعداد ملفك التعريفي. إذا بعت أو حوَّلت العنصر الأولي القابل للتحصيل إلى محفظة أخرى، فستحتاج إلى استعادته أو الحصول على واحد جديد بطريقة ما. لا يمكنك إنشاء عنصر أولي جديد باستخدام عنوان المحفظة هذا.",
+  "ROI": "ROI (العائد على الاستثمار)",
+  "Timeframe": "الفترة الزمنية",
+  "CAKE per $1000": "CAKE لكل 1000 دولار",
+  "Calculated based on current rates. Compounding once daily. Rates are estimates provided for your convenience only, and by no means represent guaranteed returns.": "تم احتسابه بناءً على الأسعار الحالية. التجميع مرة واحدة يوميًا. الأسعار عبارة تقديرات مقدَّمة للتسهيل عليك فقط، ولا تمثِّل بأي شكلٍ من الأشكال عائدات مضمونة.",
+  "You can't change this once you click Confirm.": "لا يمكنك تغيير ذلك بعد النقر على \"تأكيد\".",
+  "Until ticket sale": "حتى بيع التذاكر",
+  "To burn:": "للحرق:",
+  "On sale soon": "للبيع قريبًا",
+  "Teams Overview": "استعراض الفرق",
+  "Teams": "الفرق",
+  "See More": "عرض المزيد",
+  "Team Achievements": "إنجازات الفريق",
+  "Team Points": "نقاط الفريق",
+  "Active Members": "الأعضاء النشطون",
+  "Set up now": "إعداد الآن",
+  "You haven't set up your profile yet!": "لم تقم بإعداد ملفك التعريفي بعد!",
+  "You can do this at any time by clicking on your profile picture in the menu": "يمكنك إجراء ذلك في أي وقت من خلال النقر على صورة ملفك التعريفي في القائمة.",
+  "Collect": "تحصيل",
+  "Compounding": "جارٍ التجميع...",
+  "Buy BECO": "شراء BECO",
+  "Get LP tokens": "الحصول على رموز LP المميزة",
+  "Show": "إظهار",
+  "Hide": "إخفاء",
+  "Stake LP tokens": "رهن رموز LP المميزة",
+  "Stake": "رهن",
+  "Earned": "كسبت",
+  "Staked": "رهنت",
+  "The lottery number you provided does not exist": "رقم اليانصيب الذي أدخلته غير موجود.",
+  "Error fetching data": "خطأ في إحضار البيانات",
+  "Unlock wallet to access lottery": "فتح المحفظة للوصول إلى اليانصيب",
+  "Teams & Profiles": "الفرق والملفات التعريفية",
+  "Earn more points for completing larger quests!": "اكسب المزيد من النقاط عند إكمال المهام الأكبر!",
+  "Collecting points for these tasks makes them available again.": "بعد جمع النقاط لهذه المهام، فإنها ستصبح متاحة مرة أخرى.",
+  "Earn points by completing regular tasks!": "اكسب النقاط عند إكمال المهام العادية!",
+  "Task Center": "مركز المهام",
+  "Achievements": "الإنجازات",
+  "Enter your name...": "أدخل اسمك...",
+  "I understand that people can view my wallet if they know my username": "أتفهم أنه يمكن للأشخاص عرض محفظتي إذا كانوا يعلمون اسم المستخدم لحسابي.",
+  "A minimum of %num% BECO is required": "يلزم توفير %num% من BECO كحدٍ أدنى.",
+  "Only reuse a name from other social media if you're OK with people viewing your wallet. You can't change your name once you click Confirm.": "إذا كنت تريد إعادة استخدام اسم من وسيلة تواصل اجتماعي أخرى، فلا تفعل ذلك إلا إذا كنت لا تمانع عرض الأشخاص لمحفظتك. لا يمكنك تغيير اسمك بعد النقر على \"تأكيد\".",
+  "Please connect your wallet to continue": "يُرجى ربط محفظتك للمتابعة.",
+  "Public Profile": "ملف تعريفي عام",
+  "Show off your stats and collectibles with your unique profile. Team features will be revealed soon!": "استعرض إحصائياتك والعناصر القابلة للتحصيل من خلال ملفك التعريفي المميز. سيتم الكشف عن مزايا الفرق قريبًا!",
+  "Points": "النقاط",
+  "Set Your Name": "تعيين الاسم",
+  "Step %num%": "الخطوة %num%",
+  "See the list >": "عرض القائمة >",
+  "Staked only": "المرهون بها فقط",
+  "getLP": "احصل على %symbol%",
+  "Balance": "الرصيد",
+  "Oops, page not found.": "عذرًا، لم يتم العثور على الصفحة.",
+  "Back Home": "العودة إلى الصفحة الرئيسية",
+  "Unstake LP tokens": "فك رهن رموز LP المميزة",
+  "Live": "مباشرة",
+  "Start": "بدء",
+  "Connect wallet to view": "اربط محفظة للعرض",
+  "Sorry, you needed to register during the “entry” period!": "عذرًا، كان عليك التسجيل خلال فترة \"الدخول\"!",
+  "Check your Rank": "اطَّلع على ترتيبك",
+  "You’re not participating this time.": "لست مشاركًا هذه المرة.",
+  "Rank in team": "الترتيب في الفريق",
+  "Your volume": "حجم تداولاتك",
+  "Since start": "منذ البدء",
+  "Your Score": "نتيجتك",
+  "Enable": "تمكين",
+  "Enabling": "جارٍ التمكين",
+  "%amount% BECO": "%amount% من BECO",
+  "IFO Shopper: %title%": "مشتري IFO: %title%",
+  "%num% of total": "%num% من إجمالي",
+  "All estimated rates take into account this pool's %fee%% performance fee": "تراعي جميع الأسعار المقدَّرة رسوم أداء هذا التجمُّع البالغة %fee%%.",
+  "Sorry, you didn’t contribute enough LP tokens to meet the minimum threshold. You didn’t buy anything in this sale, but you can still reclaim your LP tokens.": "عذرًا، أنت لم تساهم بما يكفي من رموز LP المميزة لاستيفاء الحد الأدنى. لم تشترِ أي شيء في عملية البيع هذه، لكن ما زال بإمكانك استعادة رموز LP المميزة الخاصة بك.",
+  "Only applies within 3 days of staking. Unstaking after 3 days will not include a fee. Timer resets every time you stake new BECO in the pool.": "ينطبق خلال 3 أيام من الرهن فقط. ولن يتضمَّن فك الرهن بعد مرور 3 أيام أي رسوم. ستتم إعادة تعيين المؤقِّت في كل مرة ترهن فيها BECO جديدة في التجمُّع.",
+  "unstaking fee until": "رسوم فك الرهن حتى",
+  "unstaking fee if withdrawn within 72h": "رسوم فك الرهن في حال السحب خلال 72 ساعة",
+  "Unstaking fee: %fee%%": "رسوم فك الرهن: %fee%%",
+  "Performance Fee": "رسوم الأداء",
+  "Compound: collect and restake BECO into pool.": "المجمَّع: اجمع وعاود رهن BECO في التجمُّع.",
+  "Harvest: collect BECO and send to wallet": "الحصاد: اجمع BECO وأرسل إلى المحفظة",
+  "%position% Entered": "%position% الذي دخلته",
+  "Sort by": "الفرز حسب",
+  "Expired": "انتهت المدة",
+  "Calculating": "جارٍ الحساب",
+  "Next": "التالي",
+  "Later": "لاحقًا",
+  "Up": "لأعلى",
+  "Down": "لأسفل",
+  "%multiplier% Payout": "المكسب %multiplier%",
+  "Enter %direction%": "أدخل %direction%",
+  "Prize Pool:": "مجموع الجوائز:",
+  "Charts": "المخططات",
+  "Your History": "سجلك",
+  "All": "الكل",
+  "Collected": "محصَّلة",
+  "Uncollected": "غير محصَّلة",
+  "Round": "الجولة",
+  "Your Result": "نتيجتك",
+  "Your direction": "اتجاهك",
+  "Your position": "مركزك",
+  "Lose": "خسارة",
+  "Entry starts": "يبدأ الدخول",
+  "Locked Price": "سعر مجمَّد",
+  "Last Price": "آخر سعر",
+  "Closed Price": "سعر الإغلاق",
+  "Win": "ربح",
+  "Opening Block": "معاملة الفتح",
+  "Closing Block": "معاملة الإغلاق",
+  "Total Value Locked (TVL)": "إجمالي القيمة المجمَّدة (TVL)",
+  "Automatic restaking": "معاودة الرهن تلقائيًا",
+  "Manual BECO": "CAKE يدوية",
+  "Auto BECO": "CAKE تلقائية",
+  "Auto BECO Bounty": "جائزة Beco التلقائية",
+  "Claim": "مطالبة",
+  "Any funds you stake in this pool will be automagically harvested and restaked (compounded) for you.": "سيتم حصد أي اموال ترهنها في هذا التجمُّع تلقائيًا ومعاودة رهنها (تجميعها) لك.",
+  "Total staked": "إجمالي الرهن",
+  "Simply stake tokens to earn.": "ما عليك سوى رهن الرموز المميزة للربح.",
+  "High APR, low risk.": "ارتفاع معدل الفائدة السنوية المئوية، انخفاض المخاطر.",
+  "Stake Liquidity Pool (LP) tokens to earn.": "ارهن الرموز المميزة لتجمُّع السيولة للربح.",
+  "Basic Sale": "عملية البيع الأساسية",
+  "Every person can only commit a limited amount, but may expect a higher return per token committed.": "يمكن لأي شخص تخصيص عدد محدود، وتوقُّع عائد أكبر لكل رمز مميز تم تخصيصه.",
+  "Unlimited Sale": "بيع غير مقيَّد",
+  "No limits on the amount you can commit. Additional fee applies when claiming.": "لا توجد قيود على العدد الذي يمكنك تخصيصه. يتم تطبيق رسم إضافي عند المطالبة.",
+  "You didn’t participate in this sale!": "لم تشارك في عملية البيع هذه!",
+  "Max. LP token entry": "أقصى عدد من رموز LP المميزة للدخول",
+  "How to Take Part": "كيفية المشاركة",
+  "Activate your Profile": "تنشيط ملفك التعريفي",
+  "You’ll need an active BecoSwap Profile to take part in an IFO!": "ستحتاج إلى ملف تعريفي نشط في BecoSwap للمشاركة في IFO!",
+  "Profile Active!": "الملف التعريفي نشط!",
+  "Get BECO-BNB LP Tokens": "الحصول على رموز BECO-BNB LP المميزة",
+  "Stake BECO and BNB in the liquidity pool to get LP tokens.": "ارهن BECO وBNB في تجمُّع السيولة للحصول على رموز LP المميزة.",
+  "You’ll spend them to buy IFO sale tokens.": "ستنفقها لشراء رموز بيع IFO المميزة.",
+  "Commit LP Tokens": "تخصيص رموز LP",
+  "When the IFO sales are live, you can “commit” your LP tokens to buy the tokens being sold.": "نوصيك بالتخصيص لعملية البيع الأساسية أولًا، ولكن يمكنك القيام بالأمرين معًا إذا أردت.",
+  "Claim your tokens and achievement": "المطالبة برموزك المميزة والإنجازات",
+  "After the IFO sales finish, you can claim any IFO tokens that you bought, and any unspent BECO-BNB LP tokens will be returned to your wallet.": "بعد انتهاء عمليات بيع IFO الأساسية، يمكنك المطالبة بأي رموز IFO مميزة اشتريتها، وستتم إعادة أي رموز BECO-BNB LP لم تنفقها إلى محفظتك.",
+  "This round's closing transaction has been submitted to the blockchain, and is waiting to be confirmed.": "This round's closing transaction has been submitted to the blockchain, and is waiting to be confirmed."
+}
