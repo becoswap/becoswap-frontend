@@ -22,20 +22,21 @@ const Profile = () => {
   if (account && !hasProfile) {
     return (
       <Page>
-        <ProfileCreation />
+        Come back soon!{/* <ProfileCreation /> */}
       </Page>
     )
   }
 
   return (
     <Page>
-      <Header />
+      Come back soon!
+      {/* <Header />
       <Route exact path="/profile">
         <PublicProfile />
       </Route>
       <Route path="/profile/tasks">
         <TaskCenter />
-      </Route>
+      </Route> */}
     </Page>
   )
 }
