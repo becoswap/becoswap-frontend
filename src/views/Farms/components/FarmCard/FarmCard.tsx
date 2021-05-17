@@ -107,8 +107,6 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, account }
   const earnLabel = farm.dual ? farm.dual.earnLabel : 'BECO'
 
   const farmAPR = farm.apr && farm.apr.toLocaleString('en-US', { maximumFractionDigits: 2 })
-
-  const harvestInterval = farm.harvestInterval ? farm.harvestInterval / 60/60 : 0;
   const depositFee = farm.depositFeeBP  || 0
 
   const liquidityUrlPathParts = getLiquidityUrlPathParts({
@@ -153,7 +151,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, account }
       </Flex>
       <Flex justifyContent="space-between">
         <Text>{t('Harvest Lockup')}:</Text>
-        <Text bold>{harvestInterval} Hour(s)</Text>
+        <Text bold>{farm.harvestInterval} Hour(s)</Text>
       </Flex>
       <CardActionsContainer farm={farm} account={account} addLiquidityUrl={addLiquidityUrl} />
       <Divider />
@@ -165,7 +163,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, account }
         <DetailsSection
           removed={removed}
           bscScanAddress={`https://bscscan.com/address/${farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]}`}
-          infoAddress={`https://pancakeswap.info/pair/${lpAddress}`}
+          infoAddress={`https://becoswap.info/pair/${lpAddress}`}
           totalValueFormatted={totalValueFormatted}
           lpLabel={lpLabel}
           addLiquidityUrl={addLiquidityUrl}

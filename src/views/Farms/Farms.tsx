@@ -123,7 +123,6 @@ const Farms: React.FC = () => {
   const isArchived = pathname.includes('archived')
   const isInactive = pathname.includes('history')
   const isActive = !isInactive && !isArchived
-
   // Users with no wallet connected should see 0 as Earned amount
   // Connected users should see loading indicator until first userData has loaded
   const userDataReady = !account || (!!account && userDataLoaded)
@@ -136,7 +135,6 @@ const Farms: React.FC = () => {
   useEffect(() => {
     // Makes the main scheduled fetching to request archived farms data
     dispatch(setLoadArchivedFarmsData(isArchived))
-
     // Immediately request data for archived farms so users don't have to wait
     // 60 seconds for public data and 10 seconds for user data
     if (isArchived) {

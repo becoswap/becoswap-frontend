@@ -12,7 +12,6 @@ import {
 import { FarmsState, Farm } from '../types'
 
 const nonArchivedFarms = farmsConfig.filter(({ pid }) => !isArchivedPid(pid))
-
 const noAccountFarmConfig = farmsConfig.map((farm) => ({
   ...farm,
   userData: {

@@ -179,8 +179,8 @@ export const useGetApiPrice = (address: string) => {
 }
 
 export const usePriceBnbBusd = (): BigNumber => {
-  const bnbBusdFarm = useFarmFromPid(2)
-  return bnbBusdFarm.tokenPriceVsQuote ? new BigNumber(1).div(bnbBusdFarm.tokenPriceVsQuote) : BIG_ZERO
+  // const bnbBusdFarm = useFarmFromPid(2)
+  return BIG_ZERO
 }
 
 export const usePriceCakeBusd = (): BigNumber => {
