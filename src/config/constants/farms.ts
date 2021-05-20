@@ -24,13 +24,13 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 4,
-    lpSymbol: 'BNB-BUSD LP',
+    lpSymbol: 'BNB-USDT LP',
     lpAddresses: {
       97: '0x3ed8936cAFDF85cfDBa29Fbe5940A5b0524824F4',
       56: '0x587d26D8235C24DBA51CF4E6629d5327CF43Ae4C',
     },
-    token: tokens.wbnb,
-    quoteToken: tokens.busd,
+    token: tokens.usdt,
+    quoteToken: tokens.wbnb,
   },
   {
     pid: 5,
