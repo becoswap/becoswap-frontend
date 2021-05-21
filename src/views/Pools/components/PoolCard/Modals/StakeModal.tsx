@@ -3,14 +3,15 @@ import styled from 'styled-components'
 import { Modal, Text, Flex, Image, Button, Slider, BalanceInput, AutoRenewIcon, Link } from '@becoswap-libs/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { BASE_EXCHANGE_URL } from 'config'
-import { useSousStake } from 'hooks/useStake'
-import { useSousUnstake } from 'hooks/useUnstake'
 import useTheme from 'hooks/useTheme'
 import useToast from 'hooks/useToast'
 import BigNumber from 'bignumber.js'
 import { getFullDisplayBalance, formatNumber, getDecimalAmount } from 'utils/formatBalance'
 import { Pool } from 'state/types'
+import useStake from 'hooks/useStake'
+import useUnstake from 'hooks/useUnstake'
 import PercentageButton from './PercentageButton'
+
 
 interface StakeModalProps {
   isBnbPool: boolean
@@ -26,7 +27,6 @@ const StyledLink = styled(Link)`
 `
 
 const StakeModal: React.FC<StakeModalProps> = ({
-  isBnbPool,
   pool,
   stakingMax,
   stakingTokenPrice,
@@ -37,8 +37,8 @@ const StakeModal: React.FC<StakeModalProps> = ({
   const { t } = useTranslation()
   const { theme } = useTheme()
 
-  const { onStake } = useSousStake(sousId, isBnbPool)
-  const { onUnstake } = useSousUnstake(sousId, pool.enableEmergencyWithdraw)
+  const { onStake } = useStake(sousId)
+  const { onUnstake } = useUnstake(sousId)
   const { toastSuccess, toastError } = useToast()
 
   const [pendingTx, setPendingTx] = useState(false)
@@ -68,7 +68,7 @@ const StakeModal: React.FC<StakeModalProps> = ({
     if (isRemovingStake) {
       // unstaking
       try {
-        await onUnstake(stakeAmount, stakingToken.decimals)
+        await onUnstake(stakeAmount)
         toastSuccess(
           `${t('Unstaked')}!`,
           t(`Your ${earningToken.symbol} earnings have also been harvested to your wallet!`),
@@ -82,7 +82,7 @@ const StakeModal: React.FC<StakeModalProps> = ({
     } else {
       try {
         // staking
-        await onStake(stakeAmount, stakingToken.decimals)
+        await onStake(stakeAmount)
         toastSuccess(`${t('Staked')}!`, t(`Your ${stakingToken.symbol} funds have been staked in the pool!`))
         setPendingTx(false)
         onDismiss()

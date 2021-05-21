@@ -14,9 +14,9 @@ import {
 import { useTranslation } from 'contexts/Localization'
 import useTheme from 'hooks/useTheme'
 import { useSousHarvest } from 'hooks/useHarvest'
-import { useSousStake } from 'hooks/useStake'
 import useToast from 'hooks/useToast'
 import { Token } from 'config/constants/types'
+import { useSousStake } from 'hooks/useStake'
 
 interface CollectModalProps {
   formattedBalance: string
