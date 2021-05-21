@@ -64,7 +64,7 @@ const FAQ = () => {
             <Text fontSize="14px" color="textSubtle">
               -{' '}
               {t(
-                'CAKE prizes will be distributed as per the BECO/BUSD price on the day of distribution. Every eligible participant will win prizes at the end of the competition.',
+                'BECO prizes will be distributed as per the BECO/BUSD price on the day of distribution. Every eligible participant will win prizes at the end of the competition.',
               )}
             </Text>
             <Text fontSize="14px" color="textSubtle">

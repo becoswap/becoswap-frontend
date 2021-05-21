@@ -76,7 +76,7 @@ const BuyTicketModal: React.FC<BuyTicketModalProps> = ({ max, onDismiss }) => {
         onChange={handleChange}
         max={fullBalance}
         symbol="TICKET"
-        availableSymbol="CAKE"
+        availableSymbol="BECO"
       />
       <div>
         <Tips>{t(`1 Ticket = ${LOTTERY_TICKET_PRICE} BECO`, { num: LOTTERY_TICKET_PRICE })}</Tips>

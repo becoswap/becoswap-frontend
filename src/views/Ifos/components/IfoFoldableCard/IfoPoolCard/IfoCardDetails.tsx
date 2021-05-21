@@ -55,7 +55,7 @@ const IfoCardDetails: React.FC<IfoCardDetailsProps> = ({ poolId, ifo, publicIfoD
         <>
           {poolId === PoolIds.poolBasic && <FooterEntry label={t('Max. LP token entry')} value={maxLpTokens} />}
           <FooterEntry label={t('Funds to raise:')} value={ifo[poolId].raiseAmount} />
-          <FooterEntry label={t('CAKE to burn:')} value={ifo[poolId].cakeToBurn} />
+          <FooterEntry label={t('BECO to burn:')} value={ifo[poolId].cakeToBurn} />
           <FooterEntry label={`Price per ${ifo.token.symbol}: `} value={`$${ifo.tokenOfferingPrice}`} />
         </>
       )
@@ -76,7 +76,7 @@ const IfoCardDetails: React.FC<IfoCardDetailsProps> = ({ poolId, ifo, publicIfoD
           {poolId === PoolIds.poolUnlimited && <FooterEntry label={t('Additional fee:')} value={taxRate} />}
           <FooterEntry label={t('Total committed:')} value={totalCommitted} />
           <FooterEntry label={t('Funds to raise:')} value={ifo[poolId].raiseAmount} />
-          <FooterEntry label={t('CAKE to burn:')} value={ifo[poolId].cakeToBurn} />
+          <FooterEntry label={t('BECO to burn:')} value={ifo[poolId].cakeToBurn} />
           <FooterEntry
             label={`Price per ${ifo.token.symbol}: `}
             value={`$${ifo.tokenOfferingPrice ? ifo.tokenOfferingPrice : '?'}`}
