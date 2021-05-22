@@ -22,8 +22,7 @@ const MyReferralLinkCard = () => {
           {t('My Referral Link')}
         </Heading>
         <Flex mb="32px">
-          <a target="_blank" rel="noreferrer" href={referralLink}>{referralLink}</a>
-          <CopyToClipboard toCopy={account}>Copy</CopyToClipboard>
+          <CopyToClipboard toCopy={referralLink}>{referralLink}</CopyToClipboard>
         </Flex>
       </CardBody>
     </StyledLotteryCard>
