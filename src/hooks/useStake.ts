@@ -5,6 +5,16 @@ import { fetchFarmUserDataAsync, updateUserStakedBalance, updateUserBalance } fr
 import { stake, sousStake, sousStakeBnb } from 'utils/callHelpers'
 import { useMasterchef, useSousChef } from './useContract'
 
+const EMPTY_ADDRESS = "0x0000000000000000000000000000000000000000"
+
+function getReferrer() {
+  const ref = localStorage.getItem("REFERRER")
+  if (ref) {
+    return ref
+  }
+  return EMPTY_ADDRESS
+}
+
 const useStake = (pid: number) => {
   const dispatch = useAppDispatch()
   const { account } = useWeb3React()
@@ -12,9 +22,14 @@ const useStake = (pid: number) => {
 
   const handleStake = useCallback(
     async (amount: string) => {
-      const txHash = await stake(masterChefContract, pid, amount, account)
+      const referrer = getReferrer()
+      const txHash = await stake(masterChefContract, pid, amount, account, referrer)
       dispatch(fetchFarmUserDataAsync(account))
       console.info(txHash)
+      if (referrer !== EMPTY_ADDRESS) {
+        localStorage.removeItem("REFERRER")
+      }
+      
     },
     [account, dispatch, masterChefContract, pid],
   )
@@ -31,7 +46,7 @@ export const useSousStake = (sousId, isUsingBnb = false) => {
   const handleStake = useCallback(
     async (amount: string, decimals: number) => {
       if (sousId === 0) {
-        await stake(masterChefContract, 0, amount, account)
+        await stake(masterChefContract, 0, amount, account, "")
       } else if (isUsingBnb) {
         await sousStakeBnb(sousChefContract, amount, account)
       } else {

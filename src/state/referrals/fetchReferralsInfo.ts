@@ -1,6 +1,7 @@
 import multicall from "utils/multicall"
 import referralsABI from "config/abi/referral.json"
 import { getReferralsAddress } from "utils/addressHelpers"
+import BigNumber from "bignumber.js"
 
 
 // Thunks
@@ -26,11 +27,10 @@ const fetchReferralInfo = async (account: string) => {
     ]
   
     const [referrer, referralsCount, totalReferralCommissions] = await multicall(referralsABI, calls)
-  
     return {
-      referrer,
-      referralsCount,
-      totalReferralCommissions
+      referrer: referrer[0],
+      referralsCount: new BigNumber(referralsCount[0]._hex).toString(),
+      totalReferralCommissions:new BigNumber(totalReferralCommissions[0]._hex).toString()
     }
 }
 
