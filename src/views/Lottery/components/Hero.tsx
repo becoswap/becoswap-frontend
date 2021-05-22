@@ -66,7 +66,7 @@ const Hero = () => {
             bold
             mt={20}
             external
-            href="https://voting.pancakeswap.finance/#/pancake/proposal/QmU8pcbmBrfbfVQXMMxmkExDq3mYq4s5cbBuFe6uCZzdmX"
+            href="https://voting.becoswap.com/#/pancake/proposal/QmU8pcbmBrfbfVQXMMxmkExDq3mYq4s5cbBuFe6uCZzdmX"
           >
             {t('Learn more')}
           </LinkExternal> */}
