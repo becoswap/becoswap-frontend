@@ -37,7 +37,7 @@ export const fetchFarmUserTokenBalances = async (account: string, farmsToFetch: 
   return parsedTokenBalances
 }
 
-export const fetchFarmUserInfo  = async (account: string, farmsToFetch: FarmConfig[]) => {
+export const fetchFarmUserStakedBalances = async (account: string, farmsToFetch: FarmConfig[]) => {
   const masterChefAddress = getMasterChefAddress()
 
   const calls = farmsToFetch.map((farm) => {
@@ -48,17 +48,29 @@ export const fetchFarmUserInfo  = async (account: string, farmsToFetch: FarmConf
     }
   })
 
-  const rawInfo = await multicall(masterchefABI, calls)
-  const parsedInfo = rawInfo.map((stakedBalance) => {
-    const nextHarvestUntil = new BigNumber(stakedBalance[3]._hex);
-    const now = Math.round(new Date().getTime()/1000)
+  const rawStakedBalances = await multicall(masterchefABI, calls)
+  const parsedStakedBalances = rawStakedBalances.map((stakedBalance) => {
+    return new BigNumber(stakedBalance[0]._hex).toJSON()
+  })
+  return parsedStakedBalances
+}
+
+export const fetchFarmUserCanHarverts = async (account: string, farmsToFetch: FarmConfig[]) => {
+  const masterChefAddress = getMasterChefAddress()
+
+  const calls = farmsToFetch.map((farm) => {
     return {
-      canHarvest: nextHarvestUntil.lte(now),
-      balance: new BigNumber(stakedBalance[0]._hex).toJSON(),
+      address: masterChefAddress,
+      name: 'canHarvest',
+      params: [farm.pid, account],
     }
   })
-  return parsedInfo
+
+  const canHarverts = await multicall(masterchefABI, calls)
+  return canHarverts
 }
+
+
 
 export const fetchFarmUserEarnings = async (account: string, farmsToFetch: FarmConfig[]) => {
   const masterChefAddress = getMasterChefAddress()

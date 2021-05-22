@@ -18,7 +18,7 @@ const PoolCard: React.FC<{ pool: Pool; account: string }> = ({ pool, account }) 
   const stakedBalance = userData?.stakedBalance ? new BigNumber(userData.stakedBalance) : BIG_ZERO
   const accountHasStakedBalance = stakedBalance.gt(0)
   const stakingTokenPrice = usePriceCakeBusd().toNumber()
-
+  const depositFee = pool.depositFeeBP  || 0
   return (
     <StyledCard
       isStaking={!isFinished && accountHasStakedBalance}
@@ -32,6 +32,14 @@ const PoolCard: React.FC<{ pool: Pool; account: string }> = ({ pool, account }) 
       />
       <CardBody>
         <AprRow pool={pool} stakingTokenPrice={stakingTokenPrice} />
+        <Flex justifyContent="space-between">
+          <Text>{t('Deposit Fee')}:</Text>
+          <Text bold>{depositFee}%</Text>
+        </Flex>
+        <Flex justifyContent="space-between">
+          <Text>{t('Harvest Lockup')}:</Text>
+          <Text bold>{pool.harvestInterval} Hour(s)</Text>
+        </Flex>
         <Flex mt="24px" flexDirection="column">
           {account ? (
             <CardActions pool={pool} stakedBalance={stakedBalance} stakingTokenPrice={stakingTokenPrice} />

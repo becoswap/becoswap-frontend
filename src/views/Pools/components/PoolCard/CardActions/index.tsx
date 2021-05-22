@@ -31,6 +31,7 @@ const CardActions: React.FC<CardActionsProps> = ({ pool, stakedBalance, stakingT
   const needsApproval = !allowance.gt(0) && !isBnbPool
   const isStaked = stakedBalance.gt(0)
   const isLoading = !userData
+  const canHarvest = userData?.canHarvest ? userData.canHarvest : false
 
   return (
     <Flex flexDirection="column">
@@ -49,6 +50,7 @@ const CardActions: React.FC<CardActionsProps> = ({ pool, stakedBalance, stakingT
               earnings={earnings}
               earningToken={earningToken}
               sousId={sousId}
+              canHarvert={canHarvest}
               isBnbPool={isBnbPool}
               isLoading={isLoading}
             />

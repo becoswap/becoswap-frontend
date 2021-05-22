@@ -21,7 +21,8 @@ export interface Farm extends FarmConfig {
     allowance: string
     tokenBalance: string
     stakedBalance: string
-    earnings: string
+    earnings: string,
+    canHarvest: boolean
   }
 }
 
@@ -34,6 +35,7 @@ export interface Pool extends PoolConfig {
     stakingTokenBalance: BigNumber
     stakedBalance: BigNumber
     pendingReward: BigNumber
+    canHarvest: boolean
   }
 }
 

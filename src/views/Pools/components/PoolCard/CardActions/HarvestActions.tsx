@@ -14,6 +14,7 @@ interface HarvestActionsProps {
   sousId: number
   isBnbPool: boolean
   isLoading?: boolean
+  canHarvert: boolean
 }
 
 const HarvestActions: React.FC<HarvestActionsProps> = ({
@@ -22,6 +23,7 @@ const HarvestActions: React.FC<HarvestActionsProps> = ({
   sousId,
   isBnbPool,
   isLoading = false,
+  canHarvert
 }) => {
   const { t } = useTranslation()
   const earningTokenPrice = useGetApiPrice(earningToken.address ? getAddress(earningToken.address) : '')
@@ -44,7 +46,6 @@ const HarvestActions: React.FC<HarvestActionsProps> = ({
       isCompoundPool={isCompoundPool}
     />,
   )
-
   return (
     <Flex flexDirection="column" mb="16px">
       <Flex justifyContent="space-between" alignItems="center">
@@ -61,7 +62,7 @@ const HarvestActions: React.FC<HarvestActionsProps> = ({
           )}
         </Flex>
         <Flex>
-          <Button disabled={!hasEarnings} onClick={onPresentCollect}>
+          <Button disabled={!hasEarnings || !canHarvert} onClick={onPresentCollect}>
             {isCompoundPool ? t('Collect') : t('Harvest')}
           </Button>
         </Flex>

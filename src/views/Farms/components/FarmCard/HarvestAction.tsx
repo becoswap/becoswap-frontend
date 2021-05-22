@@ -11,9 +11,10 @@ import CardBusdValue from '../../../Home/components/CardBusdValue'
 interface FarmCardActionsProps {
   earnings?: BigNumber
   pid?: number
+  canHarvest?: boolean
 }
 
-const HarvestAction: React.FC<FarmCardActionsProps> = ({ earnings, pid }) => {
+const HarvestAction: React.FC<FarmCardActionsProps> = ({ earnings, pid, canHarvest }) => {
   const { account } = useWeb3React()
   const { t } = useTranslation()
   const [pendingTx, setPendingTx] = useState(false)
@@ -23,7 +24,6 @@ const HarvestAction: React.FC<FarmCardActionsProps> = ({ earnings, pid }) => {
   const rawEarningsBalance = account ? getBalanceNumber(earnings) : 0
   const displayBalance = rawEarningsBalance.toLocaleString()
   const earningsBusd = rawEarningsBalance ? new BigNumber(rawEarningsBalance).multipliedBy(cakePrice).toNumber() : 0
-
   return (
     <Flex mb="8px" justifyContent="space-between" alignItems="center">
       <Heading color={rawEarningsBalance === 0 ? 'textDisabled' : 'text'}>
@@ -31,7 +31,7 @@ const HarvestAction: React.FC<FarmCardActionsProps> = ({ earnings, pid }) => {
         {earningsBusd > 0 && <CardBusdValue value={earningsBusd} />}
       </Heading>
       <Button
-        disabled={rawEarningsBalance === 0 || pendingTx}
+        disabled={rawEarningsBalance === 0 || pendingTx || !canHarvest}
         onClick={async () => {
           setPendingTx(true)
           await onReward()

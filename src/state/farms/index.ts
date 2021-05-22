@@ -7,7 +7,8 @@ import {
   fetchFarmUserEarnings,
   fetchFarmUserAllowances,
   fetchFarmUserTokenBalances,
-  fetchFarmUserInfo,
+  fetchFarmUserStakedBalances,
+  fetchFarmUserCanHarverts,
 } from './fetchFarmUser'
 import { FarmsState, Farm } from '../types'
 
@@ -19,6 +20,7 @@ const noAccountFarmConfig = farmsConfig.map((farm) => ({
     tokenBalance: '0',
     stakedBalance: '0',
     earnings: '0',
+    canHarvest: false,
   },
 }))
 
@@ -66,16 +68,16 @@ export const fetchFarmUserDataAsync = (account: string) => async (dispatch, getS
   const farmsToFetch = fetchArchived ? farmsConfig : nonArchivedFarms
   const userFarmAllowances = await fetchFarmUserAllowances(account, farmsToFetch)
   const userFarmTokenBalances = await fetchFarmUserTokenBalances(account, farmsToFetch)
-  const userStakedInfo = await fetchFarmUserInfo(account, farmsToFetch)
+  const userStakedBalances = await fetchFarmUserStakedBalances(account, farmsToFetch)
   const userFarmEarnings = await fetchFarmUserEarnings(account, farmsToFetch)
-
+  const userCanHarverts = await fetchFarmUserCanHarverts(account, farmsToFetch)
   const arrayOfUserDataObjects = userFarmAllowances.map((farmAllowance, index) => {
     return {
       pid: farmsToFetch[index].pid,
       allowance: userFarmAllowances[index],
       tokenBalance: userFarmTokenBalances[index],
-      stakedBalance: userStakedInfo[index].balance,
-      canHarvest: userStakedInfo[index].canHarvest,
+      stakedBalance: userStakedBalances[index],
+      canHarvest: userCanHarverts[index][0],
       earnings: userFarmEarnings[index],
     }
   })
