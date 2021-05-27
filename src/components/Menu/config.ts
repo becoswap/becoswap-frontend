@@ -30,7 +30,28 @@ const config: MenuEntry[] = [
     icon: 'PoolIcon',
     href: '/pools',
   },
-  
+  {
+    label: 'Analytics',
+    icon: 'InfoIcon',
+    items: [
+      {
+        label: "Overview",
+        href: 'https://becoswap.info',
+      },
+      {
+        label: "Tokens",
+        href: 'https://becoswap.info/tokens',
+      },
+      {
+        label: "Pairs",
+        href: 'https://becoswap.info/pairs',
+      },
+      {
+        label: "Accounts",
+        href: 'https://becoswap.info/accounts',
+      },
+    ],
+  },
   {
     label: 'Lottery',
     icon: 'TicketIcon',
