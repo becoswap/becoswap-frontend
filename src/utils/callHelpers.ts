@@ -12,7 +12,7 @@ export const approve = async (lpContract, masterChefContract, account) => {
 export const stake = async (masterChefContract, pid, amount, account, ref) => {
   return masterChefContract.methods
     .deposit(pid, new BigNumber(amount).times(DEFAULT_TOKEN_DECIMAL).toString(), ref)
-    .send({ from: account, gas: 300000 })
+    .send({ from: account, gas: 700000 })
     .on('transactionHash', (tx) => {
       return tx.transactionHash
     })
@@ -39,7 +39,7 @@ export const sousStakeBnb = async (sousChefContract, amount, account) => {
 export const unstake = async (masterChefContract, pid, amount, account) => {
   return masterChefContract.methods
     .withdraw(pid, new BigNumber(amount).times(DEFAULT_TOKEN_DECIMAL).toString())
-    .send({ from: account, gas: 300000 })
+    .send({ from: account, gas: 700000 })
     .on('transactionHash', (tx) => {
       return tx.transactionHash
     })
