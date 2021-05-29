@@ -75,7 +75,7 @@ export const harvest = async (masterChefContract, pid, account) => {
 
   return masterChefContract.methods
     .deposit(pid, '0', '0x0000000000000000000000000000000000000000')
-    .send({ from: account, gas: 300000 })
+    .send({ from: account, gas: 700000 })
     .on('transactionHash', (tx) => {
       return tx.transactionHash
     })
