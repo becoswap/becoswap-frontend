@@ -25,7 +25,7 @@ const CakeStats = () => {
   const totalSupply = useTotalSupply()
   const burnedBalance = getBalanceNumber(useBurnedBalance(getCakeAddress()))
   const cakeSupply = totalSupply ? getBalanceNumber(totalSupply) - burnedBalance : 0
-
+  const transferTax = "10%"
   return (
     <StyledCakeStats>
       <CardBody>
@@ -43,6 +43,10 @@ const CakeStats = () => {
         <Row>
           <Text fontSize="14px">{t('New BECO/block')}</Text>
           <CardValue fontSize="14px" decimals={0} value={100} />
+        </Row>
+        <Row>
+          <Text fontSize="14px">{t('Transfer BECO Fee')}</Text>
+          <Text fontSize="14px">{transferTax}</Text>
         </Row>
       </CardBody>
     </StyledCakeStats>
