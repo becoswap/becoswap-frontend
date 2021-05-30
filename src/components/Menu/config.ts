@@ -31,6 +31,11 @@ const config: MenuEntry[] = [
     href: '/pools',
   },
   {
+    label: 'Referrals',
+    icon: 'ReferralIcon',
+    href: '/referrals',
+  },
+  {
     label: 'Analytics',
     icon: 'InfoIcon',
     items: [
@@ -96,12 +101,6 @@ const config: MenuEntry[] = [
     label: 'Games',
     icon: 'NftIcon',
     href: 'https://docs.becoswap.com/products/games',
-  },
-  
-  {
-    label: 'Referrals',
-    icon: 'ReferralIcon',
-    href: '/referrals',
   },
   {
     label: 'More',
