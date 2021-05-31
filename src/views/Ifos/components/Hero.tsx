@@ -9,7 +9,7 @@ const getGradient = (isDark: boolean) => {
     return 'repeating-linear-gradient(to right, #332453, #332453 40px, #281D44 40px, #281D44 80px)'
   }
 
-  return 'repeating-linear-gradient(to right, #21d4e2, #21d4e2 40px, #53dee9 40px, #53dee9 80px)'
+  return 'linear-gradient(139.73deg, rgb(255 255 255) 0%, rgb(27 152 94) 100%)'
 }
 
 const StyledHero = styled.div`
@@ -19,10 +19,6 @@ const StyledHero = styled.div`
 `
 
 const CurtainBottom = styled.div`
-  background-image: url('/images/curtain-bottom-${({ theme }) => (theme.isDark ? 'dark' : 'light')}.png');
-  background-repeat: repeat-x;
-  background-size: contain;
-  height: 20px;
 `
 
 const Hero = () => {
@@ -36,7 +32,7 @@ const Hero = () => {
             {t('Launchpad')}
           </Heading>
           <Text bold fontSize="20px">
-            {t('Launchpad will be start soon')}
+            {t('Buy new tokens with BECO-LP.')}
           </Text>
         </Container>
       </StyledHero>

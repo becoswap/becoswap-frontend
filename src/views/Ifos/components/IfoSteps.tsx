@@ -19,7 +19,6 @@ import { WalletIfoData } from 'hooks/ifo/types'
 import { useTranslation } from 'contexts/Localization'
 import useTokenBalance from 'hooks/useTokenBalance'
 import Container from 'components/layout/Container'
-import { useProfile } from 'state/hooks'
 import { getAddress } from 'utils/addressHelpers'
 
 interface Props {
@@ -42,11 +41,9 @@ const Wrapper = styled(Container)`
 
 const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
   const { poolBasic, poolUnlimited } = walletIfoData
-  const { hasProfile } = useProfile()
   const { t } = useTranslation()
   const balance = useTokenBalance(getAddress(ifo.currency.address))
   const stepsValidationStatus = [
-    hasProfile,
     balance.isGreaterThan(0),
     poolBasic.amountTokenCommittedInLP.isGreaterThan(0) || poolUnlimited.amountTokenCommittedInLP.isGreaterThan(0),
     poolBasic.hasClaimed || poolUnlimited.hasClaimed,
@@ -61,28 +58,7 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
   }
 
   const renderCardBody = (step: number) => {
-    const isStepValid = stepsValidationStatus[step]
     switch (step) {
-      case 0:
-        return (
-          <CardBody>
-            <Heading as="h4" color="secondary" mb="16px">
-              Activate your Profile
-            </Heading>
-            <Text color="textSubtle" small mb="16px">
-              You’ll need an active BecoSwap Profile to take part in an IFO!
-            </Text>
-            {isStepValid ? (
-              <Text color="success" bold>
-                {t('Profile Active!')}
-              </Text>
-            ) : (
-              <Button as={Link} href="/profile">
-                {t('Activate you profile')}
-              </Button>
-            )}
-          </CardBody>
-        )
       case 1:
         return (
           <CardBody>
