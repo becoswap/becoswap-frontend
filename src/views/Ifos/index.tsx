@@ -2,15 +2,16 @@ import { ButtonMenu, ButtonMenuItem, Flex } from '@becoswap-libs/uikit'
 import Container from 'components/layout/Container'
 import React from 'react'
 import { Link, Route, useRouteMatch } from 'react-router-dom'
-
+import { ifosConfig } from 'config/constants'
 import Hero from './components/Hero'
 import PastIfo from './PastIfo'
 import CurrentIfo from './CurrentIfo'
+import ApplyIfo from "./ApplyIfo"
 
+const activeIfo = ifosConfig.find((ifo) => ifo.isActive)
 
 const Ifos = () => {
   const { path, url, isExact } = useRouteMatch()
-
   return (
     <>
       <Hero />
@@ -26,7 +27,7 @@ const Ifos = () => {
           </ButtonMenu>
         </Flex>
         <Route exact path={`${path}`}>
-          Apply Your Project
+          { activeIfo !== undefined ? (<CurrentIfo/>) : (<ApplyIfo/>) }
         </Route>
         <Route path={`${path}/history`}>
           <PastIfo />
