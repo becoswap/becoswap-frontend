@@ -42,7 +42,7 @@ const CakeStats = () => {
         </Row>
         <Row>
           <Text fontSize="14px">{t('New BECO/block')}</Text>
-          <CardValue fontSize="14px" decimals={0} value={100} />
+          <CardValue fontSize="14px" decimals={0} value={70} />
         </Row>
         <Row>
           <Text fontSize="14px">{t('Transfer BECO Fee')}</Text>
