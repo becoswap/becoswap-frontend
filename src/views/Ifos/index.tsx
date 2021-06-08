@@ -6,7 +6,7 @@ import { ifosConfig } from 'config/constants'
 import Hero from './components/Hero'
 import PastIfo from './PastIfo'
 import CurrentIfo from './CurrentIfo'
-import ApplyIfo from "./ApplyIfo"
+import ApplyIfo from './ApplyIfo'
 
 const activeIfo = ifosConfig.find((ifo) => ifo.isActive)
 
@@ -27,7 +27,7 @@ const Ifos = () => {
           </ButtonMenu>
         </Flex>
         <Route exact path={`${path}`}>
-          { activeIfo !== undefined ? (<CurrentIfo/>) : (<ApplyIfo/>) }
+          {activeIfo !== undefined ? <CurrentIfo /> : <ApplyIfo />}
         </Route>
         <Route path={`${path}/history`}>
           <PastIfo />

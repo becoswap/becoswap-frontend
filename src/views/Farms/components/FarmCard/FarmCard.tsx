@@ -107,7 +107,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, account }
   const earnLabel = farm.dual ? farm.dual.earnLabel : 'BECO'
 
   const farmAPR = farm.apr && farm.apr.toLocaleString('en-US', { maximumFractionDigits: 2 })
-  const depositFee = farm.depositFeeBP  || 0
+  const depositFee = farm.depositFeeBP || 0
 
   const liquidityUrlPathParts = getLiquidityUrlPathParts({
     quoteTokenAddress: farm.quoteToken.address,

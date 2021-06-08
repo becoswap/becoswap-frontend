@@ -19,8 +19,6 @@ export const nftSources: NftSource = {
   },
 }
 
-const Nfts: Nft[] = [
- 
-]
+const Nfts: Nft[] = []
 
 export default Nfts

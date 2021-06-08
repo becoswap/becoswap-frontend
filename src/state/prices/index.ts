@@ -17,7 +17,7 @@ export const fetchPrices = createAsyncThunk<PriceApiThunk>('prices/fetch', async
   const data2 = (await response2.json()) as PriceApiResponse
 
   // Return normalized token names
-  const prices =  {
+  const prices = {
     updated_at: data.updated_at,
     data: Object.keys(data.data).reduce((accum, token) => {
       return {
@@ -30,7 +30,7 @@ export const fetchPrices = createAsyncThunk<PriceApiThunk>('prices/fetch', async
   const becoAddr = Object.keys(data2.data)[0]
   prices.data[becoAddr.toLowerCase()] = parseFloat(data2.data[becoAddr].price)
 
-  return prices;
+  return prices
 })
 
 export const pricesSlice = createSlice({

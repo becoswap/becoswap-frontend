@@ -73,7 +73,7 @@ export const fetchPoolsUserDataAsync = (account) => async (dispatch) => {
     stakingTokenBalance: stakingTokenBalances[pool.sousId],
     stakedBalance: stakedBalances[pool.sousId],
     pendingReward: pendingRewards[pool.sousId],
-    canHarvest: canHarvests[pool.sousId]
+    canHarvest: canHarvests[pool.sousId],
   }))
 
   dispatch(setPoolsUserData(userData))

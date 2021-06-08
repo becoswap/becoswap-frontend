@@ -8,8 +8,8 @@ export default {
     56: '0x6ab8463a4185b80905e05a9ff80a2d6b714b9e95',
   },
   lottery: {
-    97: '0x99c2EcD51d52c036B00130d882Bc65f20Fdecf9f',
-    56: '0x3C3f2049cc17C136a604bE23cF7E42745edf3b91',
+    97: '0x091fF4ee8b12dF117a9b3A9F3D7E8fd5f6F79ac1',
+    56: '0x091fF4ee8b12dF117a9b3A9F3D7E8fd5f6F79ac1',
   },
   lotteryNFT: {
     97: '0x8175c10383511b3a1C68f9dB222dc14A19CC950e',
@@ -62,5 +62,5 @@ export default {
   referrals: {
     56: '0x2b84F27F6aF42e68e0840F57D544229Cf5C6e321',
     97: '0x2b84F27F6aF42e68e0840F57D544229Cf5C6e321',
-  }
+  },
 }

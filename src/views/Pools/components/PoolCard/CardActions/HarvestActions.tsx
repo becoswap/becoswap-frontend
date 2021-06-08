@@ -23,7 +23,7 @@ const HarvestActions: React.FC<HarvestActionsProps> = ({
   sousId,
   isBnbPool,
   isLoading = false,
-  canHarvert
+  canHarvert,
 }) => {
   const { t } = useTranslation()
   const earningTokenPrice = useGetApiPrice(earningToken.address ? getAddress(earningToken.address) : '')

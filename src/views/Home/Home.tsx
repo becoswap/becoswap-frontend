@@ -23,7 +23,6 @@ const Hero = styled.div`
   margin: auto auto 25px;
   padding: 32px 16px;
   text-align: center;
-
 `
 
 const Cards = styled(BaseLayout)`

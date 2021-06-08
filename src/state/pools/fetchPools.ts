@@ -38,7 +38,7 @@ export const fetchPoolsBlockLimits = async () => {
 
 export const fetchPools = async () => {
   const nonBnbPools = poolsConfig.filter((p) => p.stakingToken.symbol !== 'BNB')
-  const calls= nonBnbPools.map((poolConfig) => {
+  const calls = nonBnbPools.map((poolConfig) => {
     return {
       address: getMasterChefAddress(),
       name: 'poolInfo',
@@ -48,7 +48,6 @@ export const fetchPools = async () => {
   const poolsInfo = await multicall(masterchefABI, calls)
   return nonBnbPools.map((p, index) => {
     const info = poolsInfo[index]
-
 
     const harvestInterval = new BigNumber(info.harvestInterval._hex)
     const depositFeeBP = new BigNumber(info.depositFeeBP)

@@ -18,7 +18,7 @@ const PastIfo = () => {
         ),
       )}
     </IfoLayout>
-  ) 
+  )
 }
 
 export default PastIfo

@@ -1,18 +1,7 @@
 import React from 'react'
 import { useRouteMatch, Link } from 'react-router-dom'
-import {
-  ButtonMenu,
-  ButtonMenuItem,
-
-  Toggle,
-  Text,
-  Flex,
-  NotificationDot,
-
-} from '@becoswap-libs/uikit'
+import { ButtonMenu, ButtonMenuItem, Toggle, Text, Flex, NotificationDot } from '@becoswap-libs/uikit'
 import { useTranslation } from 'contexts/Localization'
-
-
 
 const PoolTabButtons = ({ stakedOnly, setStakedOnly, hasStakeInFinishedPools }) => {
   const { url, isExact } = useRouteMatch()

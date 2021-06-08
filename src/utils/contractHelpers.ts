@@ -49,7 +49,7 @@ import predictionsAbi from 'config/abi/predictions.json'
 
 const getContract = (abi: any, address: string, web3?: Web3) => {
   const _web3 = web3 ?? web3NoAccount
-  return new _web3.eth.Contract((abi as unknown) as AbiItem, address)
+  return new _web3.eth.Contract(abi as unknown as AbiItem, address)
 }
 
 export const getBep20Contract = (address: string, web3?: Web3) => {

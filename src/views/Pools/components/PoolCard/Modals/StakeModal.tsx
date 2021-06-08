@@ -12,7 +12,6 @@ import useStake from 'hooks/useStake'
 import useUnstake from 'hooks/useUnstake'
 import PercentageButton from './PercentageButton'
 
-
 interface StakeModalProps {
   isBnbPool: boolean
   pool: Pool

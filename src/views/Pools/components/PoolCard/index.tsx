@@ -18,7 +18,7 @@ const PoolCard: React.FC<{ pool: Pool; account: string }> = ({ pool, account }) 
   const stakedBalance = userData?.stakedBalance ? new BigNumber(userData.stakedBalance) : BIG_ZERO
   const accountHasStakedBalance = stakedBalance.gt(0)
   const stakingTokenPrice = usePriceCakeBusd().toNumber()
-  const depositFee = pool.depositFeeBP  || 0
+  const depositFee = pool.depositFeeBP || 0
   return (
     <StyledCard
       isStaking={!isFinished && accountHasStakedBalance}

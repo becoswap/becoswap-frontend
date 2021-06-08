@@ -19,7 +19,7 @@ const ComeBack = styled(Text)`
 `
 
 const StyledHero = styled.div`
-  background-image: linear-gradient(#0e7139,#124026);
+  background-image: linear-gradient(#0e7139, #124026);
   max-height: max-content;
   overflow: hidden;
   ${({ theme }) => theme.mediaQueries.sm} {
@@ -52,7 +52,6 @@ const LeftWrapper = styled.div`
   }
 `
 
-
 const Hero = () => {
   const { t } = useTranslation()
 
@@ -60,8 +59,8 @@ const Hero = () => {
     <StyledHero>
       <StyledContainer>
         <LeftWrapper>
-          <Title>{t('The Lottery Is Deploying!')}</Title>
-          <ComeBack>{t('Come back soon!')}</ComeBack>
+          <Title>{t('Lottery')}</Title>
+          <ComeBack>{t('Buy tickets with BECO Win if 2, 3 or 4 of your ticket numbers match!')}</ComeBack>
           {/* <LinkExternal
             bold
             mt={20}

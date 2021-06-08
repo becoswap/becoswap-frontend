@@ -5,10 +5,10 @@ import { fetchFarmUserDataAsync, updateUserStakedBalance, updateUserBalance } fr
 import { stake, sousStake, sousStakeBnb } from 'utils/callHelpers'
 import { useMasterchef, useSousChef } from './useContract'
 
-const EMPTY_ADDRESS = "0x0000000000000000000000000000000000000000"
+const EMPTY_ADDRESS = '0x0000000000000000000000000000000000000000'
 
 function getReferrer() {
-  const ref = localStorage.getItem("REFERRER")
+  const ref = localStorage.getItem('REFERRER')
   if (ref) {
     return ref
   }
@@ -27,9 +27,8 @@ const useStake = (pid: number) => {
       dispatch(fetchFarmUserDataAsync(account))
       console.info(txHash)
       if (referrer !== EMPTY_ADDRESS) {
-        localStorage.removeItem("REFERRER")
+        localStorage.removeItem('REFERRER')
       }
-      
     },
     [account, dispatch, masterChefContract, pid],
   )

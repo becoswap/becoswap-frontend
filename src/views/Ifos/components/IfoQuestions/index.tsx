@@ -5,8 +5,6 @@ import { useTranslation } from 'contexts/Localization'
 import FoldableText from 'components/FoldableText'
 import config from './config'
 
-
-
 const DetailsWrapper = styled.div`
   order: 1;
   margin-bottom: 40px;

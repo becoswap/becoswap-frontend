@@ -82,7 +82,7 @@ const farms: FarmConfig[] = [
     token: tokens.usdc,
     quoteToken: tokens.busd,
   },
-  
+
   {
     pid: 9,
     lpSymbol: 'CAKE-BNB LP',

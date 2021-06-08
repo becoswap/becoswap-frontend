@@ -70,8 +70,6 @@ export const fetchFarmUserCanHarverts = async (account: string, farmsToFetch: Fa
   return canHarverts
 }
 
-
-
 export const fetchFarmUserEarnings = async (account: string, farmsToFetch: FarmConfig[]) => {
   const masterChefAddress = getMasterChefAddress()
 

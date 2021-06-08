@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { BaseLayout } from '@becoswap-libs/uikit'
 import ClaimPrizesCard from './components/ClaimPrizesCard'
+import PastLotteryRoundViewer from './components/PastLotteryRoundViewer'
+import PastDrawsHistoryCard from './components/PastDrawsHistory/PastDrawsHistoryCard'
 
 const Cards = styled(BaseLayout)`
   align-items: start;
@@ -24,20 +26,20 @@ const Cards = styled(BaseLayout)`
   }
 `
 
-
+const SecondCardColumnWrapper = styled.div<{ isAWin?: boolean }>`
+  display: flex;
+  flex-direction: column;
+`
 
 const PastDrawsPage: React.FC = () => {
   return (
     <>
       <ClaimPrizesCard />
       <Cards>
-        {/* <PastLotteryRoundViewer />
+        <PastLotteryRoundViewer />
         <SecondCardColumnWrapper>
           <PastDrawsHistoryCard />
-          <BunnyImageWrapper>
-            <img src="/images/pancake-lottery-bunny.png" alt="lottery bunny" />
-          </BunnyImageWrapper>
-        </SecondCardColumnWrapper> */}
+        </SecondCardColumnWrapper>
       </Cards>
     </>
   )

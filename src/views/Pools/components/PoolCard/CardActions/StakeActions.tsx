@@ -1,15 +1,5 @@
 import React from 'react'
-import {
-  Flex,
-  Text,
-  Button,
-  IconButton,
-  AddIcon,
-  MinusIcon,
-  Heading,
-  useModal,
-  Skeleton,
-} from '@becoswap-libs/uikit'
+import { Flex, Text, Button, IconButton, AddIcon, MinusIcon, Heading, useModal, Skeleton } from '@becoswap-libs/uikit'
 import BigNumber from 'bignumber.js'
 import { useTranslation } from 'contexts/Localization'
 import { getBalanceNumber, formatNumber, getDecimalAmount } from 'utils/formatBalance'

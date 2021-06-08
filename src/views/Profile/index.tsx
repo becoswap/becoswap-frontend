@@ -15,11 +15,7 @@ const Profile = () => {
   }
 
   if (account && !hasProfile) {
-    return (
-      <Page>
-        Come back soon!{/* <ProfileCreation /> */}
-      </Page>
-    )
+    return <Page>Come back soon!{/* <ProfileCreation /> */}</Page>
   }
 
   return (

@@ -17,7 +17,7 @@ const config: MenuEntry[] = [
       {
         label: 'Liquidity',
         href: 'https://exchange.becoswap.com/#/pool',
-      }
+      },
     ],
   },
   {
@@ -40,19 +40,19 @@ const config: MenuEntry[] = [
     icon: 'InfoIcon',
     items: [
       {
-        label: "Overview",
+        label: 'Overview',
         href: 'https://becoswap.info',
       },
       {
-        label: "Tokens",
+        label: 'Tokens',
         href: 'https://becoswap.info/tokens',
       },
       {
-        label: "Pairs",
+        label: 'Pairs',
         href: 'https://becoswap.info/pairs',
       },
       {
-        label: "Accounts",
+        label: 'Accounts',
         href: 'https://becoswap.info/accounts',
       },
     ],
@@ -96,7 +96,7 @@ const config: MenuEntry[] = [
     icon: 'SupplyChainIcon',
     href: 'https://docs.becoswap.com/products/supplychain',
   },
-  
+
   {
     label: 'Games',
     icon: 'NftIcon',
@@ -125,7 +125,7 @@ const config: MenuEntry[] = [
       {
         label: 'Blog',
         href: 'https://becoswap.medium.com',
-      }
+      },
     ],
   },
 ]

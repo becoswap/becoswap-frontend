@@ -18,8 +18,7 @@ const StyledHero = styled.div`
   padding-top: 40px;
 `
 
-const CurtainBottom = styled.div`
-`
+const CurtainBottom = styled.div``
 
 const Hero = () => {
   const { t } = useTranslation()

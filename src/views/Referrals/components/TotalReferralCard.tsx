@@ -1,12 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Heading, Card, CardBody, Text} from '@becoswap-libs/uikit'
+import { Heading, Card, CardBody, Text } from '@becoswap-libs/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useGetReferralInfo } from 'state/hooks'
 
-const StyledLotteryCard = styled(Card)`
-  
-`
+const StyledLotteryCard = styled(Card)``
 
 const TotalReferralCard = () => {
   const { t } = useTranslation()

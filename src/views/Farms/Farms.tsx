@@ -97,7 +97,6 @@ const ViewControls = styled.div`
   }
 `
 
-
 const NUMBER_OF_FARMS_VISIBLE = 12
 
 const Farms: React.FC = () => {

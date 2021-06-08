@@ -16,7 +16,6 @@ const StyledHeading = styled(Heading)`
   margin: 16px 0;
 `
 
-
 const UnlockWalletCard = () => {
   const { t } = useTranslation()
 

@@ -21,7 +21,7 @@ export interface Farm extends FarmConfig {
     allowance: string
     tokenBalance: string
     stakedBalance: string
-    earnings: string,
+    earnings: string
     canHarvest: boolean
   }
 }
@@ -138,7 +138,7 @@ export interface PriceState {
 }
 
 export interface ReferralInfo {
-  referralsCount: number,
+  referralsCount: number
   totalReferralCommissions: number
   referrer: string
 }

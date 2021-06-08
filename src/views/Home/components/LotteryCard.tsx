@@ -1,11 +1,19 @@
 import React, { useState, useCallback } from 'react'
 import styled from 'styled-components'
-import { Heading, Card, CardBody, Button } from '@becoswap-libs/uikit'
+import { Heading, Card, CardBody, Button, useModal } from '@becoswap-libs/uikit'
 import { useWeb3React } from '@web3-react/core'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { useTranslation } from 'contexts/Localization'
 import { useMultiClaimLottery } from 'hooks/useBuyLottery'
 import { useTotalClaim } from 'hooks/useTickets'
+import { useApproval } from 'hooks/useApproval'
+import { useLotteryAllowance } from 'hooks/useAllowance'
+import useGetLotteryHasDrawn from 'hooks/useGetLotteryHasDrawn'
+import useTokenBalance from 'hooks/useTokenBalance'
+import { getCakeAddress } from 'utils/addressHelpers'
+import BuyTicketModal from 'views/Lottery/components/TicketCard/BuyTicketModal'
+
+import PurchaseWarningModal from 'views/Lottery/components/TicketCard/PurchaseWarningModal'
 import UnlockButton from 'components/UnlockButton'
 import CakeWinnings from './CakeWinnings'
 import LotteryJackpot from './LotteryJackpot'
@@ -40,11 +48,16 @@ const Actions = styled.div`
 
 const LotteryCard = () => {
   const { account } = useWeb3React()
+  const lotteryHasDrawn = useGetLotteryHasDrawn()
+
   const [requestClaim, setRequestedClaim] = useState(false)
   const { t } = useTranslation()
   const { claimAmount, setLastUpdated } = useTotalClaim()
   const { onMultiClaim } = useMultiClaimLottery()
-
+  const allowance = useLotteryAllowance()
+  const [onPresentApprove] = useModal(<PurchaseWarningModal />)
+  const { handleApprove, requestedApproval } = useApproval(onPresentApprove)
+  const cakeBalance = useTokenBalance(getCakeAddress())
   const handleClaim = useCallback(async () => {
     try {
       setRequestedClaim(true)
@@ -59,24 +72,25 @@ const LotteryCard = () => {
     }
   }, [onMultiClaim, setRequestedClaim, setLastUpdated])
 
-  // const renderLotteryTicketButtonBuyOrApprove = () => {
-  //   if (!allowance.toNumber()) {
-  //     return (
-  //       <Button width="100%" disabled={requestedApproval} onClick={handleApprove}>
-  //         {t('Approve BECO')}
-  //       </Button>
-  //     )
-  //   }
-  //   if (lotteryHasDrawn) {
-  //     return <Button disabled> {t('On sale soon')}</Button>
-  //   }
-  //   return (
-  //     <Button id="dashboard-buy-tickets" variant="secondary" onClick={onPresentBuy}>
-  //       {t('Buy Tickets')}
-  //     </Button>
-  //   )
-  // }
+  const renderLotteryTicketButtonBuyOrApprove = () => {
+    if (!allowance.toNumber()) {
+      return (
+        <Button width="100%" disabled={requestedApproval} onClick={handleApprove}>
+          {t('Approve BECO')}
+        </Button>
+      )
+    }
+    if (lotteryHasDrawn) {
+      return <Button disabled> {t('On sale soon')}</Button>
+    }
+    return (
+      <Button id="dashboard-buy-tickets" variant="secondary" onClick={onPresentBuy}>
+        {t('Buy Tickets')}
+      </Button>
+    )
+  }
 
+  const [onPresentBuy] = useModal(<BuyTicketModal max={cakeBalance} />)
 
   return (
     <StyledLotteryCard>
@@ -103,7 +117,7 @@ const LotteryCard = () => {
             >
               {t('Collect Winnings')}
             </Button>
-            {/* {renderLotteryTicketButtonBuyOrApprove()} */}
+            {renderLotteryTicketButtonBuyOrApprove()}
           </Actions>
         ) : (
           <Actions>

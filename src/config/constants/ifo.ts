@@ -1,4 +1,3 @@
-
 import { Ifo } from './types'
 
 // const becoBnbLpToken: Token = {
@@ -7,8 +6,6 @@ import { Ifo } from './types'
 //     decimals: 18,
 //   }
 
-const ifos: Ifo[] = [
-    
-]
+const ifos: Ifo[] = []
 
 export default ifos

@@ -115,17 +115,17 @@ export const useProfile = () => {
 
 const saveReferrer = async (account, ref) => {
   if (!ethers.utils.isAddress(ref) || account === ref) {
-    return 
+    return
   }
   const referralData = await fetchReferralInfo(account)
-  if (referralData.referrer === "0x0000000000000000000000000000000000000000") {
-    localStorage.setItem("REFERRER", ref)
+  if (referralData.referrer === '0x0000000000000000000000000000000000000000') {
+    localStorage.setItem('REFERRER', ref)
   }
 }
 export const useSaveReferrer = () => {
   // eslint-disable-next-line
-  const search = window.location.search;
-  const ref = new URLSearchParams(search).get('ref');
+  const search = window.location.search
+  const ref = new URLSearchParams(search).get('ref')
   const { account } = useWeb3React()
   useEffect(() => {
     if (account && ref) {

@@ -16,17 +16,18 @@ const StyledCardBody = styled(CardBody)`
   }
 `
 
-
 const StyledCardFooter = styled(CardFooter)`
   text-align: center;
   padding: 8px;
   background: ${({ theme }) => theme.colors.backgroundAlt};
 `
 
-
 const Ifo = () => {
   const onClick = () => {
-    window.open("https://docs.google.com/forms/d/e/1FAIpQLSdENzcTqxqO0nxausZIWIPP2tsz7aVEPdpmLfFTzOzG6mv2Gw/viewform",'_blank');
+    window.open(
+      'https://docs.google.com/forms/d/e/1FAIpQLSdENzcTqxqO0nxausZIWIPP2tsz7aVEPdpmLfFTzOzG6mv2Gw/viewform',
+      '_blank',
+    )
   }
   return (
     <IfoLayout>
@@ -35,10 +36,11 @@ const Ifo = () => {
           <Text>Is your project ready to get launched on BECO?</Text>
         </StyledCardBody>
         <StyledCardFooter>
-          <Button width="100%" onClick={onClick}>Apply Now</Button>
+          <Button width="100%" onClick={onClick}>
+            Apply Now
+          </Button>
         </StyledCardFooter>
       </StyledCard>
-      
     </IfoLayout>
   )
 }

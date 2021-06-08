@@ -35,45 +35,46 @@ const Cards = styled(BaseLayout)`
   }
 `
 
-
 const Referrals: React.FC = () => {
-    const { t } = useTranslation()
-    const { account } = useWeb3React()
-    const dispatch = useAppDispatch()
-    
-    useEffect(() => {
-      if (account) {
-        dispatch(fetchReferralInfoAsync(account))
-      }
-    }, [dispatch, account])
+  const { t } = useTranslation()
+  const { account } = useWeb3React()
+  const dispatch = useAppDispatch()
 
-    return (
-        <>
-          <PageHeader>
-            <Flex justifyContent="space-between" flexDirection={['column', null, 'row']}>
-              <Flex flexDirection="column" mr={['8px', 0]}>
-                <Heading as="h1" size="xxl" color="secondary" mb="24px">
-                  {t('Referels')}
-                </Heading>
-                <Heading size="md" color="text">
-                  {t('Share the referral link below to invite your friends and earn 1% of your friends earnings FOREVER!')}
-                </Heading>
-              </Flex>
-            </Flex>
-          </PageHeader>
-          <Page>
-            { !account ? <UnlockWalletCard/> : (
-                <div>
-                    <Cards>
-                        <TotalReferralCard/>
-                        <TotalCommissionCard/>
-                    </Cards>
-                    <MyReferralLinkCard/>
-                </div>
-            )}
-          </Page>
-        </>
-    )
+  useEffect(() => {
+    if (account) {
+      dispatch(fetchReferralInfoAsync(account))
+    }
+  }, [dispatch, account])
+
+  return (
+    <>
+      <PageHeader>
+        <Flex justifyContent="space-between" flexDirection={['column', null, 'row']}>
+          <Flex flexDirection="column" mr={['8px', 0]}>
+            <Heading as="h1" size="xxl" color="secondary" mb="24px">
+              {t('Referels')}
+            </Heading>
+            <Heading size="md" color="text">
+              {t('Share the referral link below to invite your friends and earn 1% of your friends earnings FOREVER!')}
+            </Heading>
+          </Flex>
+        </Flex>
+      </PageHeader>
+      <Page>
+        {!account ? (
+          <UnlockWalletCard />
+        ) : (
+          <div>
+            <Cards>
+              <TotalReferralCard />
+              <TotalCommissionCard />
+            </Cards>
+            <MyReferralLinkCard />
+          </div>
+        )}
+      </Page>
+    </>
+  )
 }
 
 export default Referrals

@@ -25,7 +25,7 @@ const CakeStats = () => {
   const totalSupply = useTotalSupply()
   const burnedBalance = getBalanceNumber(useBurnedBalance(getCakeAddress()))
   const cakeSupply = totalSupply ? getBalanceNumber(totalSupply) - burnedBalance : 0
-  const transferTax = "10%"
+  const transferTax = '10%'
   return (
     <StyledCakeStats>
       <CardBody>
