@@ -1,15 +1,20 @@
 import React from 'react'
 import { Text } from '@becoswap-libs/uikit'
-import { useTranslation } from 'contexts/Localization'
+import { useTotalRewards } from 'hooks/useTickets'
+import { getBalanceAmount } from 'utils/formatBalance'
+import { usePriceCakeBusd } from 'state/hooks'
+import CardBusdValue from "./CardBusdValue"
 
 const LotteryJackpot = () => {
-  const { t } = useTranslation()
-
+  const rewards = useTotalRewards()
+  const cakePriceBusd = usePriceCakeBusd()
+  const rewardsBusd = rewards.multipliedBy(cakePriceBusd)
   return (
     <>
       <Text bold fontSize="24px" style={{ lineHeight: '1.5' }}>
-        {t('Coming Soon')}
+        {getBalanceAmount(rewards).toJSON()} BECO
       </Text>
+      {!cakePriceBusd.eq(0) && <CardBusdValue value={getBalanceAmount(rewardsBusd).toNumber()} />}
       <br />
     </>
   )
