@@ -95,5 +95,5 @@ export const fetchUserPendingRewards = async (account) => {
   // Beco / Beco pool
   const pendingReward = await masterChefContract.methods.pendingBeco('0', account).call()
 
-  return { 0: new BigNumber(pendingReward).toJSON() }
+  return { 0: new BigNumber(pendingReward).multipliedBy(90).div(100).toJSON() }
 }
