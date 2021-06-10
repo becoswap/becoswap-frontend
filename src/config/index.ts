@@ -21,3 +21,4 @@ export const BASE_BSC_SCAN_URL = 'https://bscscan.com'
 export const LOTTERY_MAX_NUMBER_OF_TICKETS = 50
 export const LOTTERY_TICKET_PRICE = 100
 export const DEFAULT_TOKEN_DECIMAL = BIG_TEN.pow(18)
+export const TRANSFER_TAX = 10

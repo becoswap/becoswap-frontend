@@ -6,6 +6,7 @@ import multicall from 'utils/multicall'
 import { getAddress, getMasterChefAddress } from 'utils/addressHelpers'
 import { getWeb3NoAccount } from 'utils/web3'
 import BigNumber from 'bignumber.js'
+import { TRANSFER_TAX } from 'config'
 
 // Pool 0, Cake / Cake is a different kind of contract (master chef)
 // BNB pools use the native BNB token (wrapping ? unwrapping is done at the contract level)
@@ -94,6 +95,7 @@ export const fetchUserPendingRewards = async (account) => {
 
   // Beco / Beco pool
   const pendingReward = await masterChefContract.methods.pendingBeco('0', account).call()
+  const pendingRewardAfterTax = pendingReward - pendingReward/TRANSFER_TAX;
 
-  return { 0: new BigNumber(pendingReward).multipliedBy(90).div(100).toJSON() }
+  return { 0: new BigNumber(pendingRewardAfterTax).toJSON() }
 }

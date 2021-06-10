@@ -1,4 +1,6 @@
 import React from 'react'
+import { TRANSFER_TAX } from 'config'
+
 import { Card, CardBody, Heading, Text } from '@becoswap-libs/uikit'
 import styled from 'styled-components'
 import { getBalanceNumber } from 'utils/formatBalance'
@@ -25,7 +27,6 @@ const CakeStats = () => {
   const totalSupply = useTotalSupply()
   const burnedBalance = getBalanceNumber(useBurnedBalance(getCakeAddress()))
   const cakeSupply = totalSupply ? getBalanceNumber(totalSupply) - burnedBalance : 0
-  const transferTax = '10%'
   return (
     <StyledCakeStats>
       <CardBody>
@@ -46,7 +47,7 @@ const CakeStats = () => {
         </Row>
         <Row>
           <Text fontSize="14px">{t('Transfer BECO Fee')}</Text>
-          <Text fontSize="14px">{transferTax}</Text>
+          <Text fontSize="14px">{TRANSFER_TAX}%</Text>
         </Row>
       </CardBody>
     </StyledCakeStats>
