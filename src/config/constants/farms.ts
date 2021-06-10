@@ -93,6 +93,40 @@ const farms: FarmConfig[] = [
     token: tokens.cake,
     quoteToken: tokens.wbnb,
   },
+
+
+  {
+    pid: 11,
+    lpSymbol: 'TUSD-BUSD LP',
+    lpAddresses: {
+      97: '',
+      56: '0xe6003806530d318B86093004Ed5bd67727125ADd',
+    },
+    token: tokens.tusd,
+    quoteToken: tokens.busd,
+  },
+
+  {
+    pid: 12,
+    lpSymbol: 'DAI-BUSD LP',
+    lpAddresses: {
+      97: '',
+      56: '0x60a8baDa3bd905927c3650aB84dE6550939c5349',
+    },
+    token: tokens.dai,
+    quoteToken: tokens.busd,
+  },
+
+  {
+    pid: 13,
+    lpSymbol: 'UST-BUSD LP',
+    lpAddresses: {
+      97: '',
+      56: '0x2568aB07674AAC2C3d2bc1690882EceB143659D7',
+    },
+    token: tokens.ust,
+    quoteToken: tokens.busd,
+  },
 ]
 
 export default farms

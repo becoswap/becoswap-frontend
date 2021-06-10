@@ -75,6 +75,34 @@ const tokens = {
     decimals: 18,
     projectLink: 'https://tether.to/',
   },
+
+  tusd: {
+    symbol: 'TUSD',
+    address: {
+      56: '0x14016e85a25aeb13065688cafb43044c2ef86784',
+      97: '',
+    },
+    decimals: 18,
+    projectLink: 'https://www.trueusd.com/',
+  },
+  ust: {
+    symbol: 'UST',
+    address: {
+      56: '0x23396cf899ca06c4472205fc903bdb4de249d6fc',
+      97: '',
+    },
+    decimals: 18,
+    projectLink: 'https://mirror.finance/',
+  },
+  dai: {
+    symbol: 'DAI',
+    address: {
+      56: '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3',
+      97: '',
+    },
+    decimals: 18,
+    projectLink: 'http://www.makerdao.com/',
+  },
 }
 
 export default tokens
