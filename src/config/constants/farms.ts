@@ -93,8 +93,6 @@ const farms: FarmConfig[] = [
     token: tokens.cake,
     quoteToken: tokens.wbnb,
   },
-
-
   {
     pid: 11,
     lpSymbol: 'TUSD-BUSD LP',
@@ -127,6 +125,68 @@ const farms: FarmConfig[] = [
     token: tokens.ust,
     quoteToken: tokens.busd,
   },
+
+  // 12/06/2021
+  {
+    pid: 14,
+    lpSymbol: 'trx-bnb LP',
+    lpAddresses: {
+      97: '',
+      56: '0xc58e08C79B7e92c66cEbA9200CBEC19aA293505E',
+    },
+    token: tokens.trx,
+    quoteToken: tokens.wbnb,
+  },
+  {
+    pid: 15,
+    lpSymbol: 'xrp-bnb LP',
+    lpAddresses: {
+      97: '',
+      56: '0xA32Cb4D45712689728a040ced9c1d0636E2E9C07',
+    },
+    token: tokens.xrp,
+    quoteToken: tokens.wbnb,
+  },
+  {
+    pid: 16,
+    lpSymbol: 'uni-bnb LP',
+    lpAddresses: {
+      97: '',
+      56: '0x3D404504E85EECE2cF000c0ea60f1d6648Cd18Ee',
+    },
+    token: tokens.uni,
+    quoteToken: tokens.wbnb,
+  },
+  {
+    pid: 17,
+    lpSymbol: 'doge-bnb LP',
+    lpAddresses: {
+      97: '',
+      56: '0xdD7CE91622ba5A943af5B072692e046d7A2A700b',
+    },
+    token: tokens.doge,
+    quoteToken: tokens.wbnb,
+  },
+  {
+    pid: 18,
+    lpSymbol: 'ltc-bnb LP',
+    lpAddresses: {
+      97: '',
+      56: '0x925915a3463Bc267A72Ef9e0F154f9632bb13283',
+    },
+    token: tokens.ltc,
+    quoteToken: tokens.wbnb,
+  },
+  {
+    pid: 19,
+    lpSymbol: 'vai-busd LP',
+    lpAddresses: {
+      97: '',
+      56: '0x3d948e9Dd5a626e6C70Ddbc0d96fFa48fC07Da59',
+    },
+    token: tokens.vai,
+    quoteToken: tokens.busd,
+  }
 ]
 
 export default farms

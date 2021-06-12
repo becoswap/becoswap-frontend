@@ -103,6 +103,61 @@ const tokens = {
     decimals: 18,
     projectLink: 'http://www.makerdao.com/',
   },
+
+  ltc: {
+    symbol: 'LTC',
+    address: {
+      56: '0x4338665cbb7b2485a8855a139b75d5e34ab0db94',
+      97: '',
+    },
+    decimals: 18,
+    projectLink: 'https://litecoin.org/',
+  },
+  xrp: {
+    symbol: 'XRP',
+    address: {
+      56: '0x1d2f0da169ceb9fc7b3144628db156f3f6c60dbe',
+      97: '0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5',
+    },
+    decimals: 18,
+    projectLink: 'https://ripple.com/xrp/',
+  },
+  uni: {
+    symbol: 'UNI',
+    address: {
+      56: '0xbf5140a22578168fd562dccf235e5d43a02ce9b1',
+      97: '0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5',
+    },
+    decimals: 18,
+    projectLink: 'https://uniswap.org/',
+  },
+  vai: {
+    symbol: 'VAI',
+    address: {
+      56: '0x4bd17003473389a42daf6a0a729f6fdb328bbbd7',
+      97: '',
+    },
+    decimals: 18,
+    projectLink: 'https://venus.io/',
+  },
+  doge: {
+    symbol: 'DOGE',
+    address: {
+      56: '0xba2ae424d960c26247dd6c32edc70b295c744c43',
+      97: '',
+    },
+    decimals: 8,
+    projectLink: 'https://dogecoin.com/',
+  },
+  trx: {
+    symbol: 'TRX',
+    address: {
+      56: '0x85eac5ac2f758618dfa09bdbe0cf174e7d574d5b',
+      97: '',
+    },
+    decimals: 18,
+    projectLink: 'https://tron.network/',
+  },
 }
 
 export default tokens
